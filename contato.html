@@ -1,0 +1,167 @@
+<!--  Giovanni Leandro Lati - RA: 250870 -->
+<!--  Mateus Coêlho Cardoso - RA: 250855 -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explora Foguetes - Contato</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Explora Foguetes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <button id="btnTema" class="btn btn-outline-light ms-2">
+                Tema
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 pt-5 animado">
+      <h1 class="titulo-gradiente text-center mb-4">Entre em Contato</h1>
+      <p class="text-center mb-5">
+        Dúvidas, parcerias ou orçamentos para turismo espacial? Fale conosco.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <form
+            id="formContato"
+            action="#"
+            method="post"
+            class="p-4 border rounded shadow-sm form-bg"
+          >
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome completo:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone:</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                class="form-control"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="assunto" class="form-label">Assunto:</label>
+              <select id="assunto" name="assunto" class="form-select" required>
+                <option value="">Selecione uma opção</option>
+                <option value="duvida">Dúvida</option>
+                <option value="orcamento">Orçamento</option>
+                <option value="parceria">Parceria</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form-control"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gradiente">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+          </form>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="p-4 border rounded shadow-sm h-100 form-bg info-contato">
+            <h3>Nossa Base</h3>
+            <p>
+              <strong>Endereço:</strong> Base de Lançamentos Fictícia, Setor
+              Espacial, 1000 - Cabo Canaveral, FL
+            </p>
+            <p><strong>Telefone:</strong> +55 (11) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@explorafoguetes.com.br</p>
+
+            <div class="mt-4 mb-4">
+              <a href="#" class="btn btn-outline-primary me-2">Facebook</a>
+              <a href="#" class="btn btn-outline-info me-2">Twitter</a>
+              <a href="#" class="btn btn-outline-danger">Instagram</a>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112345.6789!2d-80.6077!3d28.5728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0a5abf2e51921%3A0x6a0a03d1fb96dc9!2sCabo%20Canaveral!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape mt-5">
+      <div class="container rodape-flex">
+        <div>
+          <p>Explora Foguetes - AF Linguagens de Programação</p>
+          <p>Aluno 1: Mateus Coelho Cardoso - RA: 250855</p>
+          <p>Aluno 2: Giovanni Leandro Lati - RA: 250870</p>
+        </div>
+        <div>
+          <p>Turma: AS009TSN2 | Prof. Abimael de Oliveira</p>
+          <p>© 2026 - Projeto acadêmico sem fins comerciais.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo">↑</button>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
