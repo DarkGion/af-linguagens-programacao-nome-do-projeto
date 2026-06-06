@@ -1,0 +1,115 @@
+<!--  Giovanni Leandro Lati - RA: 250870 -->
+<!--  Mateus Coêlho Cardoso - RA: 250855 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Foguetes - Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Explora Foguetes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><button id="btnTema" class="btn btn-outline-light ms-2">Tema</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero mt-5 pt-4">
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img\Falcon 9.jpg" class="d-block w-100" alt="Foguete Falcon 9">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Lançamentos Históricos</h2>
+                            <p>Acompanhe a evolução da exploração espacial.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/apollo 11.jpg" class="d-block w-100" alt="Missão Apollo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Missões Lunares</h2>
+                            <p>Os passos da humanidade na Lua.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Estação espacial.png" class="d-block w-100" alt="Estação Espacial">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Estação Espacial Internacional</h2>
+                            <p>A nossa casa fora da Terra.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="apresentacao container mt-5 animado">
+            <h1 class="text-center titulo-gradiente">Bem-vindo à Explora Foguetes</h1>
+            <p class="text-center mt-3">Descubra as novidades do universo aeroespacial, desde os foguetes reutilizáveis até as sondas interplanetárias.</p>
+        </section>
+
+        <section class="destaques container mt-5 area-destaques">
+            <article class="card card-destaque card-personalizado">
+                <img src="img/Sonda espacial.webp" class="card-img-top" alt="Sonda de exploração">
+                <div class="card-body">
+                    <h3 class="card-title">Sondas Interplanetárias</h3>
+                    <p class="card-text">Viagens rumo aos confins do sistema solar.</p>
+                    <a href="galeria.html" class="btn btn-gradiente">Ver na Galeria</a>
+                </div>
+            </article>
+            <article class="card card-destaque card-personalizado">
+                <img src="img/viagem-espacial2.webp" class="card-img-top" alt="Turismo espacial">
+                <div class="card-body">
+                    <h3 class="card-title">Turismo Espacial</h3>
+                    <p class="card-text">As novas fronteiras para viagens civis.</p>
+                    <a href="contato.html" class="btn btn-gradiente">Fale Conosco</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="rodape mt-5">
+        <div class="container rodape-flex">
+            <div>
+                <p>Explora Foguetes - AF Linguagens de Programação</p>
+                <p>Aluno 1: Mateus Coelho Cardoso - RA: 250855</p>
+                <p>Aluno 2: Giovanni Leandro Lati - RA: 250870</p>
+            </div>
+            <div>
+                <p>Turma: AS009TSN2 | Prof. Abimael de Oliveira</p>
+                <p>© 2026 - Projeto acadêmico sem fins comerciais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo">↑</button>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
