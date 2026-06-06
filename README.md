@@ -32,4 +32,4 @@ Exploração espacial, lançamentos e foguetes.
 - Organização baseada em Flexbox para alinhamento e estrutura responsiva
 
 ## Link do Repositório
-https://github.com/DarkGion/af-linguagens-programacao-nome-do-projeto
+https://github.com/DarkGion/af-linguagens-programacao-explora-foguetes
